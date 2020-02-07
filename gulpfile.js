@@ -11,9 +11,9 @@ function bs() {
             baseDir: "./src/"
         }
     });
-    gulp.watch("./src/*.html").on('change', browserSync.reload);
-    gulp.watch("./src/css/*.css").on('change', browserSync.reload);
-    gulp.watch("./src/js/*.js").on('change', browserSync.reload);
+    watch("./src/*.html").on('change', browserSync.reload);
+    watch("./src/css/*.css").on('change', browserSync.reload);
+    watch("./src/js/*.js").on('change', browserSync.reload);
 }
 
 // CSS
@@ -29,6 +29,7 @@ function buildJS(done) {
     src('./src/js/**.js')
         .pipe(minify({
             ext:{
+                src:'.min.js',
                 min:'.js'
             }
         }))
