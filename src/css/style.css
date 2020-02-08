@@ -436,6 +436,10 @@ button {
   cursor: pointer;
 }
 
+.header {
+  padding: 34px 0;
+}
+
 .header__light::before {
   content: '';
   background: url("../img/index/light.png") no-repeat;
@@ -446,5 +450,234 @@ button {
   position: absolute;
   top: 0;
   left: 0;
+}
+
+.menu__logo {
+  display: block;
+  -webkit-transition: .3s;
+  -o-transition: .3s;
+  transition: .3s;
+  position: relative;
+  width: 148px;
+  height: 35px;
+}
+
+.menu__logo:hover .logo-text--primary {
+  color: #6675f7;
+}
+
+.logo__image {
+  position: relative;
+  width: 148px;
+  height: 17px;
+  overflow: hidden;
+}
+
+.logo__image::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 16px;
+  width: 16px;
+  height: 9px;
+  border: 4px solid #6675f7;
+  border-radius: 180px 180px 0 0;
+  border-bottom: 0;
+  -webkit-animation: circle1 10s linear infinite;
+          animation: circle1 10s linear infinite;
+}
+
+.logo__image::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 47px;
+  width: 16px;
+  height: 9px;
+  border: 4px solid #6675f7;
+  border-radius: 0 0 180px 180px;
+  border-top: 0;
+  -webkit-animation: circle2 8s linear infinite;
+          animation: circle2 8s linear infinite;
+}
+
+.logo-text__size {
+  font-family: 'Circe', sans-serif;
+  font-size: 10px;
+  font-weight: 300;
+  padding-top: 7px;
+  text-align: center;
+}
+
+.logo-text--primary {
+  color: rgba(255, 255, 255, 0.302);
+}
+
+@-webkit-keyframes circle1 {
+  0%,
+  19.999%,
+  22%,
+  62.999%,
+  64%,
+  64.999%,
+  70%,
+  100% {
+    opacity: .99;
+    border: 4px solid #6675f7;
+    border-radius: 180px 180px 0 0;
+    border-bottom: 0;
+    -webkit-box-shadow: inset 0 1px 3px rgba(102, 117, 247, 0.7);
+            box-shadow: inset 0 1px 3px rgba(102, 117, 247, 0.7);
+  }
+  20%,
+  21.999%,
+  63%,
+  63.999%,
+  65%,
+  69.999% {
+    opacity: 0.4;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+}
+
+@keyframes circle1 {
+  0%,
+  19.999%,
+  22%,
+  62.999%,
+  64%,
+  64.999%,
+  70%,
+  100% {
+    opacity: .99;
+    border: 4px solid #6675f7;
+    border-radius: 180px 180px 0 0;
+    border-bottom: 0;
+    -webkit-box-shadow: inset 0 1px 3px rgba(102, 117, 247, 0.7);
+            box-shadow: inset 0 1px 3px rgba(102, 117, 247, 0.7);
+  }
+  20%,
+  21.999%,
+  63%,
+  63.999%,
+  65%,
+  69.999% {
+    opacity: 0.4;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+}
+
+@-webkit-keyframes circle2 {
+  0%,
+  12%,
+  18.999%,
+  23%,
+  31.999%,
+  37%,
+  44.999%,
+  46%,
+  49.999%,
+  51%,
+  58.999%,
+  61%,
+  68.999%,
+  71%,
+  85.999%,
+  96%,
+  100% {
+    opacity: 0.99;
+    -webkit-box-shadow: 0 2px 4px rgba(102, 117, 247, 0.7);
+            box-shadow: 0 2px 4px rgba(102, 117, 247, 0.7);
+  }
+  19%,
+  22.99%,
+  32%,
+  36.999%,
+  45%,
+  45.999%,
+  50%,
+  50.99%,
+  59%,
+  60.999%,
+  69%,
+  70.999%,
+  86%,
+  95.999% {
+    opacity: 0.4;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+}
+
+@keyframes circle2 {
+  0%,
+  12%,
+  18.999%,
+  23%,
+  31.999%,
+  37%,
+  44.999%,
+  46%,
+  49.999%,
+  51%,
+  58.999%,
+  61%,
+  68.999%,
+  71%,
+  85.999%,
+  96%,
+  100% {
+    opacity: 0.99;
+    -webkit-box-shadow: 0 2px 4px rgba(102, 117, 247, 0.7);
+            box-shadow: 0 2px 4px rgba(102, 117, 247, 0.7);
+  }
+  19%,
+  22.99%,
+  32%,
+  36.999%,
+  45%,
+  45.999%,
+  50%,
+  50.99%,
+  59%,
+  60.999%,
+  69%,
+  70.999%,
+  86%,
+  95.999% {
+    opacity: 0.4;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+}
+
+.nav-list {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+.nav-list__item {
+  margin: 0 5px;
+}
+
+.nav-list__link {
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 10px 14px;
+  color: #ffffff;
+  display: block;
+  font-size: 14px;
+  border-radius: 3px;
+  position: relative;
+  -webkit-transition: .3s;
+  -o-transition: .3s;
+  transition: .3s;
+}
+
+.nav-list__link:hover {
+  background-color: #6675f7;
+  border: 1px solid rgba(255, 255, 255, 0);
 }
 /*# sourceMappingURL=style.css.map */
