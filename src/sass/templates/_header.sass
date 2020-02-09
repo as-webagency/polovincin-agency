@@ -22,7 +22,12 @@
             .logo
                 &-text
                     &--primary
-                        color: $blue            
+                        color: $blue 
+    &__wrapper
+        align-items: end
+        justify-content: space-between  
+    &__contacts
+        position: relative         
 .logo
     &__image
         position: relative           
@@ -40,6 +45,7 @@
             border-radius: 180px 180px 0 0
             border-bottom: 0
             animation: circle1 10s linear infinite
+            box-shadow: inset 0 1px 3px rgba(102, 117, 247, 0.7)
         &::after
             content: ''
             position: absolute
@@ -50,13 +56,12 @@
             border: 4px solid $blue
             border-radius: 0 0 180px 180px
             border-top: 0
-            animation: circle2 8s linear infinite            
+            animation: circle2 8s linear infinite 
+            box-shadow: 0 2px 4px rgba(102, 117, 247, 0.7)           
 .logo
     &-text            
         &__size
-            font-family: 'Circe', sans-serif
             font-size: 10px
-            font-weight: 300
             padding-top: 7px
             text-align: center
         &--primary
@@ -138,3 +143,40 @@
             &:hover
                 background-color: $blue
                 border: 1px solid rgba($light, 0)
+.contacts
+    align-items: flex-end
+    &-left
+        max-width: 220px
+        &__telegram
+            display: inline-block
+            vertical-align: middle
+        &__whatsapp
+            margin: 0 10px
+            display: inline-block
+            vertical-align: middle
+        &__phone
+            display: inline-block
+            vertical-align: middle
+        &__bottom
+            font-size: 13px
+            transition: .3s
+            color: rgba($light, .2)
+            margin: 5px 0 0
+            text-align: right
+            &:hover
+                color: $blue
+    &-right
+        &__email
+            color: $light
+        &__text
+            margin: 10px 0 0
+            transition: .3s
+            color: rgba($light, .2)
+            font-size: 13px
+        &:hover
+            .contacts
+                &-right
+                    &__text
+                        color: $blue  
+    &__indentation
+        margin-right: 50px              
