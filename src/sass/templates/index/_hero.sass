@@ -1,12 +1,14 @@
 .hero
+    padding: 56px 0 105px
     &__title
-        margin: 56px 0 35px
+        margin: 0 0 35px
         max-width: 600px
     p
         color: rgba($light, .5)
         font-size: 18px
         margin: 0 0 10px
     &__commercial
+        margin-bottom: 44px
         span
             color: rgba($light, .5)
             font-size: 18px
@@ -35,3 +37,56 @@
                     height: 16px
                     display: inline-block
                     margin: 0 8px
+    &__button
+        margin-right: 20px
+        height: 70px
+        position: relative
+        &:last-child
+            margin-right: 0
+        &s
+            position: relative
+            margin-bottom: 54px
+    &__main
+        position: relative
+.block
+    &-advantages
+        display: flex
+        align-items: center
+        &__text
+            color: $light
+            font-size: 15px
+            max-width: 160px
+            display: inline-block
+            vertical-align: middle  
+            margin: 0 40px 0 20px          
+// .animate
+//     &-wrapper
+//         position: absolute
+//         top: 0
+//         right: 0
+//         max-width: 950px
+//         width: 100%
+//         height: 100%
+//         overflow: hidden
+//     &-browser
+//         position: absolute
+//         top: 20px
+//         right: -150px
+//     &-grafik1
+//         position: absolute
+//         top: 100px
+//         right: -40px 
+//         z-index: -1           
+//     &-grafik2
+//         position: absolute
+//         right: 0       
+//     &-left
+//         &-side
+//             position: absolute
+//             top: 40px
+//             z-index: 3     
+//     &-right
+//         &-side
+//             position: absolute
+//             top: 290px
+//             z-index: 3     
