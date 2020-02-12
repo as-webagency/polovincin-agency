@@ -26,3 +26,41 @@ button
     cursor: pointer
 main
     position: relative  
+
+.tooltiper
+    display: inline-block
+    color: rgba($light, 5)
+    perspective: 600px
+    transform-style: preserve-3d
+.tooltiper .tooltip
+    min-width: 100px
+    position: absolute
+    font-size: 12px
+    text-align: left
+    background-color: $tooltip
+    color: rgba($light, .5)
+    padding: 15px
+    border-radius: 10px
+    visibility: hidden
+    display: block
+    line-height: 20px
+    top: 0
+    left: 0
+    transform: rotateX(90deg) translateZ(0px)
+    opacity: 0
+    transition: transform 0.4s cubic-bezier(0.64, 0.57, 0.67, 1.53), opacity 0.1s ease-out 0.1s
+.tooltiper .tooltip::before
+    content: ""
+    position: absolute
+    left: 50%
+    bottom: -26px
+    transform: translateX(-50%)
+    border-left: 14px solid transparent
+    border-right: 14px solid transparent
+    border-top: 14px solid $tooltip
+    border-bottom: 14px solid transparent
+.tooltiper:hover .tooltip
+    visibility: visible
+    transform: rotateX(0) translateZ(20px)
+    opacity: 1
+    transition: transform 0.4s cubic-bezier(0.64, 0.57, 0.67, 1.53), opacity 0.1s ease-out
