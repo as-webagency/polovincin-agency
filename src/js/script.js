@@ -13,6 +13,18 @@ blogButton.addEventListener('click', (event) => {
     blogButton.style.display = 'none';
 });
 
+
+$(".burger").click(function(){
+  if($(this).next(".menu__nav").css("display")=="none") {
+      $(this).next(".menu__nav").slideDown();
+      $(".burger").addClass("burger-open");
+  }
+  else {
+      $(".burger").removeClass("burger-open");
+      $(this).next(".menu__nav").slideUp();
+  }
+});
+
 $(document).ready(function(){
     toolTiper();
 });

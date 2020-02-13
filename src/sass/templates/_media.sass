@@ -1,0 +1,245 @@
+@media (max-width: 1305px)
+    .subscription
+        &-right
+            max-width: 500px
+@media (max-width: 1170px)
+    .blog
+        &-card
+            &__link
+                max-width: 500px
+        &-bottom 
+            .blog
+                &-card
+                    &__link
+                        max-width: 320px
+@media (max-width: 1100px)
+    .subscription 
+        .container
+            flex-direction: column
+            align-items: center
+        &-left
+            &__title
+                margin: 0 0 400px
+        &-right
+            position: absolute
+            top: 350px
+@media (max-width: 1060px)
+    .blog
+        &-card
+            &__link
+                max-width: 400px
+            &__image
+                &::before
+                    height: 300px
+                img
+                    height: 300px
+@media (max-width: 1030px)
+    .blog
+        &-bottom 
+            .blog
+                &-card
+                    &s
+                        max-width: 700px
+                        margin: 0 auto
+@media (max-width: 1024px)
+    .contacts
+        &__indentation
+            margin-right: 15px
+@media (max-width: 992px)  
+    .header
+        .container
+            padding: 0
+    .contacts
+        flex-direction: column
+        margin-left: auto
+        margin-right: 65px
+        &__indentation
+            margin-right: 0
+        &-left
+            &__telegram,
+            &__whatsapp,
+            &__bottom
+                display: none
+            &__phone
+                margin-bottom: 5px
+        &-right
+            &__text
+                display: none 
+    .burger
+        display: block 
+        border: none
+        padding: 0
+        &__top
+            position: absolute
+            top: 12px
+            left: 10px
+            width: 20px
+            height: 2px
+            background-color: $greyLine
+            transition: .4s
+        &__center
+            position: absolute
+            top: 19px
+            left: 10px
+            width: 14px
+            height: 2px
+            background-color: $greyLine
+            transition: .4s
+        &__bottom 
+            position: absolute
+            top: 26px
+            left: 10px     
+            width: 20px
+            height: 2px
+            background-color: $greyLine 
+            transition: .4s        
+    .menu
+        &__burger
+            position: absolute
+            top: 28px
+            right: 8px
+            z-index: 25
+            width: 40px
+            height: 40px
+            background-color: $light
+            border-radius: 50%  
+            cursor: pointer
+        &__nav
+            display: none
+            position: absolute
+            top: 0
+            left: 0
+            width: 100%
+            z-index: 20
+            padding-top: 80px
+            background: url('../img/index/bg.jpg') center repeat
+        &__logo
+            margin-left: 8px
+    .nav
+        &-list  
+            flex-direction: column 
+            &__item
+                margin: 0
+                &:first-child
+                    border-top: 1px solid rgba($light, .1)
+                    &:hover
+                        border-top: 1px solid rgba($light, 0)
+            &__link
+                border: none
+                border-radius: 0
+                border-bottom: 1px solid rgba($light, .1)
+                padding: 20px 14px
+                position: relative
+                &::after
+                    content: ''
+                    background: url('../img/arrow-menu.png') no-repeat
+                    position: absolute
+                    top: 22px
+                    right: 15px
+                    width: 7px
+                    height: 12px
+                &:hover
+                    border: none
+                    border-bottom: 1px solid rgba($light, 0)
+@media (max-width: 860px)
+    .blog
+        &-top
+            .blog
+                &-card
+                    &s
+                        flex-direction: column
+                        align-items: center                    
+@media (max-width: 768px)
+    .blog
+        &__title,
+        &__subtitle,
+            display: none
+        &-top
+            margin-top: 30px
+        &-card
+            &s
+                flex-direction: column
+                align-items: center
+@media (max-width: 585px)
+    .subscription
+        &-right
+            top: 220px
+        &-left
+            &__title
+                text-align: center
+        &-letter
+            flex-direction: column
+            align-items: center
+        &-group
+            &__button
+                margin-left: 0
+                margin-top: 20px
+    .title
+        font-size: 28px
+        line-height: 40px
+@media (max-width: 500px)
+    .subscription
+        &-right
+            top: 260px        
+@media (max-width: 425px)
+    .header
+        padding: 30px 0
+    .logo
+        &__image
+            width: 118px
+            height: 14px
+            &::before
+                width: 11px
+                left: 13px
+                border-radius: 50% 50% 0 0
+            &::after
+                width: 11px
+                left: 38px
+                border-radius: 0 0 50% 50%
+        &-text
+            &__size
+                font-size: 8px
+    .menu__logo
+        width: 118px
+    .phone
+        font-size: 14px
+    .contacts
+        margin-right: 60px
+        &-right
+            &__email
+                font-size: 13px
+    .blog
+        &-card
+            &__image
+                &::before
+                    height: 100%
+                img
+                    height: auto
+    .blog
+        &-bottom 
+            .blog
+                &-card
+                    &__image
+                        &::before
+                            height: 100%
+                        img 
+                            height: auto  
+@media (max-width: 400px)
+    .subscription
+        &-right
+            top: 280px
+@media (max-width: 390px) 
+    .subscription           
+        &-left
+            &__title
+                margin: 0 0 320px                                     
+@media (max-width: 360px) 
+    .subscription           
+        &-left
+            &__title
+                margin: 0 0 290px                                     
+@media (max-width: 340px) 
+    .subscription           
+        &-left
+            &__title
+                margin: 0 0 270px                                     

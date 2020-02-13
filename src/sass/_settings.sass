@@ -9,6 +9,7 @@ body
     font-size: 16px
     background-image: url('../img/index/bg.jpg')
     background-repeat: repeat
+    background-position: center
 .container
     max-width: 1200px
     margin: 0 auto
@@ -98,3 +99,16 @@ main
 .animated
   animation-duration: 1s
   animation-fill-mode: both    
+.burger
+    display: none
+.burger-open .burger__top
+    transform: rotate(45deg)
+    transition: .4s
+    top: 19px
+.burger-open .burger__center
+    transition: .4s
+    opacity: 0
+.burger-open .burger__bottom
+    transition: .4s
+    transform: rotate(-45deg)
+    top: 19px
