@@ -4,14 +4,14 @@
 
 'use strict';
 
-const blogButton = document.querySelector('.blog-more');
+// const blogButton = document.querySelector('.blog-more');
 
-blogButton.addEventListener('click', (event) => {
-    event.target.parentNode.querySelectorAll('.hidden').forEach(elem => {
-        elem.classList.remove('hidden');
-    });
-    blogButton.style.display = 'none';
-});
+// blogButton.addEventListener('click', (event) => {
+//     event.target.parentNode.querySelectorAll('.hidden').forEach(elem => {
+//         elem.classList.remove('hidden');
+//     });
+//     blogButton.style.display = 'none';
+// });
 
 
 $(".burger").click(function(){
