@@ -1521,6 +1521,139 @@ main {
   left: 0;
 }
 
+.footer {
+  padding: 75px 0 30px;
+  background-color: rgba(17, 17, 20, 0.2);
+}
+
+.footer-top {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-bottom: 45px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.footer-top__logo {
+  display: block;
+  -webkit-transition: .3s;
+  -o-transition: .3s;
+  transition: .3s;
+  position: relative;
+  width: 148px;
+  height: 35px;
+}
+
+.footer-top__logo:hover .logo-text--primary {
+  color: #6675f7;
+}
+
+.footer-top .contacts-left__bottom {
+  text-align: left;
+}
+
+.footer-line {
+  background-color: rgba(255, 255, 255, 0.2);
+  width: 1px;
+  height: 38px;
+  margin: 0 30px;
+}
+
+.footer-blog {
+  color: #ffffff;
+  font-size: 14px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 3px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 70px;
+  height: 40px;
+}
+
+.footer-bottom {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 30px;
+}
+
+.footer-bottom__version {
+  max-width: 250px;
+  font-size: 13px;
+  line-height: 20px;
+  color: rgba(255, 255, 255, 0.2);
+  margin: 0;
+}
+
+.footer-bottom__email {
+  font-size: 14px;
+  color: #ffffff;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.footer-bottom__policy {
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.2);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.footer-bottom__contact {
+  margin-left: 50px;
+}
+
+.footer-bottom__right {
+  text-align: right;
+  color: rgba(255, 255, 255, 0.2);
+  font-size: 10px;
+  line-height: 15px;
+  width: 190px;
+}
+
+.socials__vk, .socials__fb {
+  width: 40px;
+  height: 40px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.socials__vk svg, .socials__fb svg {
+  color: #ffffff;
+}
+
+.socials__vk {
+  margin-right: 10px;
+}
+
+.socials__fb {
+  margin-right: 15px;
+}
+
+.socials span {
+  color: rgba(255, 255, 255, 0.2);
+  font-size: 13px;
+  line-height: 20px;
+  width: 90px;
+}
+
 @media (max-width: 1305px) {
   .subscription-right {
     max-width: 500px;
@@ -1552,6 +1685,26 @@ main {
   .subscription-right {
     position: absolute;
     top: 350px;
+  }
+  .footer-line {
+    display: none;
+  }
+  .footer-top, .footer-bottom {
+    max-width: 520px;
+    margin: 0 auto;
+    padding-bottom: 25px;
+  }
+  .footer-top__logo, .footer-bottom__logo {
+    margin-bottom: 25px;
+  }
+  .footer-top .contacts-left, .footer-bottom .contacts-left {
+    margin-bottom: 25px;
+  }
+  .footer-top__version, .footer-top__contact, .footer-bottom__version, .footer-bottom__contact {
+    margin-bottom: 15px;
+  }
+  .footer-top__right, .footer-bottom__right {
+    text-align: left;
   }
 }
 
@@ -1701,6 +1854,9 @@ main {
     border: none;
     border-bottom: 1px solid rgba(255, 255, 255, 0);
   }
+  .footer-top, .footer-bottom {
+    max-width: 490px;
+  }
 }
 
 @media (max-width: 860px) {
@@ -1759,6 +1915,27 @@ main {
   }
 }
 
+@media (max-width: 513px) {
+  .footer-bottom {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .footer-bottom__left {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .footer-bottom__contact {
+    margin-left: 0;
+  }
+  .footer-blog {
+    display: none;
+  }
+}
+
 @media (max-width: 500px) {
   .subscription-right {
     top: 260px;
@@ -1766,6 +1943,9 @@ main {
 }
 
 @media (max-width: 425px) {
+  .socials {
+    margin-bottom: 15px;
+  }
   .header {
     padding: 30px 0;
   }
