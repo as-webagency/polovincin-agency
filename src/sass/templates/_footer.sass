@@ -1,6 +1,8 @@
 .footer
     padding: 75px 0 30px
-    background-color: rgba($dark, .2)
+    background-color: rgba($dark, .5)
+    position: relative
+    z-index: 5
     &-top
         justify-content: space-between
         align-items: center
@@ -71,12 +73,19 @@
         display: flex
         align-items: center
         justify-content: center
+        transition: .4s
         svg
             color: $light
     &__vk
         margin-right: 10px
+        &:hover
+            background-color: $vk
+            border: 1px solid $vk
     &__fb
         margin-right: 15px 
+        &:hover
+            background-color: $fb
+            border: 1px solid $fb
     span
         color: rgba($light, .2)  
         font-size: 13px
