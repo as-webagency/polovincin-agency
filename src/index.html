@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="shortcut icon" href="./img/favicon.png">
+    <link rel="shortcut icon" href="./img/favicon.ico">
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
@@ -101,10 +101,65 @@
                 </div>
             </div>
             <div class="hero__animate">
-                
+                <div class="animate-wrapper">
+                    <div class="animate-left-side"
+                        style="transform: translateX(-100%); -moz-transform: translateX(-100%)">
+                        <img src="./img/animate/left_block.png" alt="left_block">
+                    </div>
+                    <div class="animate-browser" style="transform: translateX(100%)">
+                        <img src="./img/animate/browser.png" alt="browser">
+                    </div>
+                    <div class="animate-right-side" style="transform: translateX(1300%)">
+                        <img src="./img/animate/right_block.png" alt="right_block">
+                    </div>
+                    <div class="animate-top-side" style="transform: translateY(-150%)">
+                        <img src="./img/animate/top_block.png" alt="top_block">
+                    </div>
+                    <div class="animate-stack-manets">
+                        <div class="animate-maneta" style="transform: translateY(-1300%)">
+                            <img src="./img/animate/moneta.png" alt="maneta">
+                        </div>
+                        <div class="animate-maneta" style="transform: translateY(-1300%)">
+                            <img src="./img/animate/moneta.png" alt="maneta">
+                        </div>
+                        <div class="animate-maneta" style="transform: translateY(-1300%)">
+                            <img src="./img/animate/moneta.png" alt="maneta">
+                        </div>
+                        <div class="animate-maneta" style="transform: translateY(-1300%)">
+                            <img src="./img/animate/moneta.png" alt="maneta">
+                        </div>
+                        <div class="animate-maneta" style="transform: translateY(-1300%)">
+                            <img src="./img/animate/moneta.png" alt="maneta">
+                        </div>
+                        <div class="animate-maneta" style="transform: translateY(-1300%)">
+                            <img src="./img/animate/moneta.png" alt="maneta">
+                        </div>
+                        <div class="animate-maneta" style="transform: translateY(-1300%)">
+                            <img src="./img/animate/moneta.png" alt="maneta">
+                        </div>
+                        <div class="animate-maneta" style="transform: translateY(-1300%)">
+                            <img src="./img/animate/moneta.png" alt="maneta">
+                        </div>
+                    </div>
+                    <div class="progress-container" id="progress-container"
+                        style="transform: skewY(26deg) translateY(190%)">
+                        <div class="bar box" style=" left: 0%; height: 0%;">
+                            <span class="text" style="font-size: 0;">30%</span>
+                        </div>
+                        <div class="bar box" style="left: 25%; height: 0%;">
+                            <span class="text" style="font-size: 0;">55%</span>
+                        </div>
+                        <div class="bar box" style="left: 50%; height: 0%;">
+                            <span class="text" style="font-size: 0;">35%</span>
+                        </div>
+                        <div class="bar box" style="left: 75%; height: 0%;">
+                            <span class="text" style="font-size: 0;">75%</span>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
-        <section class="works section shadow">
+        <section class="works section-works shadow">
             <div class="container">
                 <h2 class="works__title title">Более 200 проектов за 5 лет работы</h2>
                 <p class="works__text text">Мы делаем всё: от анализа рынка, настройки контекстной рекламы заканчивая разработкой сайта,
@@ -229,6 +284,365 @@
                 </a>
             </div>
         </section>
+        <section class="reviews section">
+            <div class="container">
+                <div class="reviews-top flex">
+                    <h2 class="title reviews-top__title">Отзывы о работе с нами</h2>
+                    <div class="tabs flex">
+                        <div class="tab">Видео-отзывы</div>
+                        <div class="tab">Отзывы на бумаге</div>
+                        <div class="tab">В личных сообщениях</div>
+                    </div>
+                </div>
+                <div class="reviews-bottom">
+                    <div class="revie">
+                        <div class="reviews-slide">
+                            <div class="reviews-slide__item">
+                                <div class="reviews-wrapper">
+                                    <img src="./img/rew-img.jpg" alt="rew-img" class="reviews-wrapper__image">
+                                    <div class="reviews-inner-wrap flex">
+                                        <div class="reviews-inner">
+                                            <h3 class="reviews-inner__title">Ремонт и отделка квартир</h3>
+                                            <div class="reviews-inner__task">
+                                                <span>ЗАДАЧА</span>
+                                                <p>Привести новых клиентов из интернета</p>
+                                            </div>
+                                            <div class="reviews-inner__task">
+                                                <span>ЧТО СДЕЛАНО</span>
+                                                <div class="reviews-block">
+                                                    <span>Анализ рынка</span><span>Разработан Landing Page</span>
+                                                    <span>Реклама в Яндекс.Директ и Google Adwords</span>
+                                                    <span>CRM система</span>
+                                                </div>
+                                            </div>
+                                            <div class="reviews-inner__task">
+                                                <span>Результат</span>
+                                                <p>Стоимость одной заявки (лида) ±900 ₽ в зависимости от сезона. 
+                                                    Проект окупился.</p>
+                                            </div>
+                                            <div class="reviews-inner__task flex flex-center">
+                                                <div class="reviews-inner__task-left">
+                                                    <span>РАБОТАЕМ</span>
+                                                    <p class="in-year">с 2015 года</p>
+                                                </div>
+                                                <div class="reviews-inner__task-right">
+                                                    <span>САЙТ</span>
+                                                    <a href="https://finhousegroup.ru">finhousegroup.ru</a>
+                                                </div>
+                                            </div>
+                                            <div class="reviews-company">Егоров Максим, руководитель ООО «ФИНХАУС ГРУПП»</div>
+                                        </div>
+                                        <div class="reviews-video">
+                                            <iframe width="520" height="360" src="https://www.youtube.com/embed/hA--QUqDt90" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="reviews-slide__item">
+                                <div class="reviews-wrapper">
+                                    <img src="./img/rew-img.jpg" alt="rew-img" class="reviews-wrapper__image">
+                                    <div class="reviews-inner-wrap flex">
+                                        <div class="reviews-inner">
+                                            <h3 class="reviews-inner__title">Ремонт и отделка квартир</h3>
+                                            <div class="reviews-inner__task">
+                                                <span>ЗАДАЧА</span>
+                                                <p>Привести новых клиентов из интернета</p>
+                                            </div>
+                                            <div class="reviews-inner__task">
+                                                <span>ЧТО СДЕЛАНО</span>
+                                                <div class="reviews-block">
+                                                    <span>Анализ рынка</span><span>Разработан Landing Page</span>
+                                                    <span>Реклама в Яндекс.Директ и Google Adwords</span>
+                                                    <span>CRM система</span>
+                                                </div>
+                                            </div>
+                                            <div class="reviews-inner__task">
+                                                <span>Результат</span>
+                                                <p>Стоимость одной заявки (лида) ±900 ₽ в зависимости от сезона. 
+                                                    Проект окупился.</p>
+                                            </div>
+                                            <div class="reviews-inner__task flex flex-center">
+                                                <div class="reviews-inner__task-left">
+                                                    <span>РАБОТАЕМ</span>
+                                                    <p class="in-year">с 2015 года</p>
+                                                </div>
+                                                <div class="reviews-inner__task-right">
+                                                    <span>САЙТ</span>
+                                                    <a href="https://finhousegroup.ru">finhousegroup.ru</a>
+                                                </div>
+                                            </div>
+                                            <div class="reviews-company">Егоров Максим, руководитель ООО «ФИНХАУС ГРУПП»</div>
+                                        </div>
+                                        <div class="reviews-video">
+                                            <iframe width="520" height="360" src="https://www.youtube.com/embed/hA--QUqDt90" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="reviews-slide__item">
+                                <div class="reviews-wrapper">
+                                    <img src="./img/rew-img.jpg" alt="rew-img" class="reviews-wrapper__image">
+                                    <div class="reviews-inner-wrap flex">
+                                        <div class="reviews-inner">
+                                            <h3 class="reviews-inner__title">Ремонт и отделка квартир</h3>
+                                            <div class="reviews-inner__task">
+                                                <span>ЗАДАЧА</span>
+                                                <p>Привести новых клиентов из интернета</p>
+                                            </div>
+                                            <div class="reviews-inner__task">
+                                                <span>ЧТО СДЕЛАНО</span>
+                                                <div class="reviews-block">
+                                                    <span>Анализ рынка</span><span>Разработан Landing Page</span>
+                                                    <span>Реклама в Яндекс.Директ и Google Adwords</span>
+                                                    <span>CRM система</span>
+                                                </div>
+                                            </div>
+                                            <div class="reviews-inner__task">
+                                                <span>Результат</span>
+                                                <p>Стоимость одной заявки (лида) ±900 ₽ в зависимости от сезона. 
+                                                    Проект окупился.</p>
+                                            </div>
+                                            <div class="reviews-inner__task flex flex-center">
+                                                <div class="reviews-inner__task-left">
+                                                    <span>РАБОТАЕМ</span>
+                                                    <p class="in-year">с 2015 года</p>
+                                                </div>
+                                                <div class="reviews-inner__task-right">
+                                                    <span>САЙТ</span>
+                                                    <a href="https://finhousegroup.ru">finhousegroup.ru</a>
+                                                </div>
+                                            </div>
+                                            <div class="reviews-company">Егоров Максим, руководитель ООО «ФИНХАУС ГРУПП»</div>
+                                        </div>
+                                        <div class="reviews-video">
+                                            <iframe width="520" height="360" src="https://www.youtube.com/embed/hA--QUqDt90" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="reviews-arrows">
+                            <div class="reviews-arrows__prev">
+                                <img src="./img/left-arrow.png" alt="">
+                            </div>
+                            <div class="reviews-arrows__next">
+                                <img src="./img/right-arrow.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="revie">
+                        <div class="paper-slide">
+                            <div class="paper-slide__item">
+                                <div class="paper-slide__box flex">
+                                    <img src="./img/paper.jpg" alt="">
+                                    <div class="paper-slide__wrap">
+                                        <span>«...Быстро оценив суть наших 
+                                            требований, Анатолий, буквально 
+                                            за несколько дней предложил концепцию 
+                                            продвижения и после запуска 
+                                            количество обращений выросло 
+                                            в 3 раза. Рекомендую как отличных 
+                                            специалистов...»</span>
+                                        <p>Иванов Павел, генеральный директор 
+                                            ООО "Фастфикс"</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="paper-slide__item">
+                                <div class="paper-slide__box flex">
+                                    <img src="./img/paper.jpg" alt="">
+                                    <div class="paper-slide__wrap">
+                                        <span>«...Быстро оценив суть наших 
+                                            требований, Анатолий, буквально 
+                                            за несколько дней предложил концепцию 
+                                            продвижения и после запуска 
+                                            количество обращений выросло 
+                                            в 3 раза. Рекомендую как отличных 
+                                            специалистов...»</span>
+                                        <p>Иванов Павел, генеральный директор 
+                                            ООО "Фастфикс"</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="paper-slide__item">
+                                <div class="paper-slide__box flex">
+                                    <img src="./img/paper.jpg" alt="">
+                                    <div class="paper-slide__wrap">
+                                        <span>«...Быстро оценив суть наших 
+                                            требований, Анатолий, буквально 
+                                            за несколько дней предложил концепцию 
+                                            продвижения и после запуска 
+                                            количество обращений выросло 
+                                            в 3 раза. Рекомендую как отличных 
+                                            специалистов...»</span>
+                                        <p>Иванов Павел, генеральный директор 
+                                            ООО "Фастфикс"</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="reviews-arrows">
+                            <div class="reviews-arrows__prevpaper">
+                                <img src="./img/left-arrow.png" alt="">
+                            </div>
+                            <div class="reviews-arrows__nextpaper">
+                                <img src="./img/right-arrow.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="revie">
+                        <div class="message-slide">
+                            <div class="message-slide__item flex">
+                                <img src="./img/rev-photo.jpg" alt="">
+                                <div class="message-slide__wrap">
+                                    <h3>Егоров Максим</h3>
+                                    <div class="position">руководитель ООО «ФИНХАУС ГРУПП»</div>
+                                    <p>«...Быстро оценив суть наших требований, Анатолий, буквально за несколько дней 
+                                        предложил концепцию продвижения и после запуска  количество обращений 
+                                        выросло в 3 раза. Рекомендую как отличных специалистов..</p>
+                                        
+                                    <p> Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать 
+                                        несколько абзацев более менее осмысленного текста рыбы на русском языке, 
+                                        а начинающему оратору отточить навык публичных выступлений 
+                                        в домашних условиях. .»</p>
+                                    <div class="soc-block flex-center flex">
+                                        <div class="socials__vk">
+                                            <svg width="19" height="12" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="vk" class="svg-inline--fa fa-vk fa-w-18" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M545 117.7c3.7-12.5 0-21.7-17.8-21.7h-58.9c-15 0-21.9 7.9-25.6 16.7 0 0-30 73.1-72.4 120.5-13.7 13.7-20 18.1-27.5 18.1-3.7 0-9.4-4.4-9.4-16.9V117.7c0-15-4.2-21.7-16.6-21.7h-92.6c-9.4 0-15 7-15 13.5 0 14.2 21.2 17.5 23.4 57.5v86.8c0 19-3.4 22.5-10.9 22.5-20 0-68.6-73.4-97.4-157.4-5.8-16.3-11.5-22.9-26.6-22.9H38.8c-16.8 0-20.2 7.9-20.2 16.7 0 15.6 20 93.1 93.1 195.5C160.4 378.1 229 416 291.4 416c37.5 0 42.1-8.4 42.1-22.9 0-66.8-3.4-73.1 15.4-73.1 8.7 0 23.7 4.4 58.7 38.1 40 40 46.6 57.9 69 57.9h58.9c16.8 0 25.3-8.4 20.4-25-11.2-34.9-86.9-106.7-90.3-111.5-8.7-11.2-6.2-16.2 0-26.2.1-.1 72-101.3 79.4-135.6z"></path></svg>
+                                        </div>
+                                        <a href="#" class="socials__link">vk.com/ivanovpavelnicknametest</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="message-slide__item flex">
+                                <img src="./img/rev-photo.jpg" alt="">
+                                <div class="message-slide__wrap">
+                                    <h3>Егоров Максим</h3>
+                                    <div class="position">руководитель ООО «ФИНХАУС ГРУПП»</div>
+                                    <p>«...Быстро оценив суть наших требований, Анатолий, буквально за несколько дней 
+                                        предложил концепцию продвижения и после запуска  количество обращений 
+                                        выросло в 3 раза. Рекомендую как отличных специалистов..</p>
+                                        
+                                    <p> Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать 
+                                        несколько абзацев более менее осмысленного текста рыбы на русском языке, 
+                                        а начинающему оратору отточить навык публичных выступлений 
+                                        в домашних условиях. .»</p>
+                                    <div class="soc-block flex-center flex">
+                                        <div class="socials__vk">
+                                            <svg width="19" height="12" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="vk" class="svg-inline--fa fa-vk fa-w-18" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M545 117.7c3.7-12.5 0-21.7-17.8-21.7h-58.9c-15 0-21.9 7.9-25.6 16.7 0 0-30 73.1-72.4 120.5-13.7 13.7-20 18.1-27.5 18.1-3.7 0-9.4-4.4-9.4-16.9V117.7c0-15-4.2-21.7-16.6-21.7h-92.6c-9.4 0-15 7-15 13.5 0 14.2 21.2 17.5 23.4 57.5v86.8c0 19-3.4 22.5-10.9 22.5-20 0-68.6-73.4-97.4-157.4-5.8-16.3-11.5-22.9-26.6-22.9H38.8c-16.8 0-20.2 7.9-20.2 16.7 0 15.6 20 93.1 93.1 195.5C160.4 378.1 229 416 291.4 416c37.5 0 42.1-8.4 42.1-22.9 0-66.8-3.4-73.1 15.4-73.1 8.7 0 23.7 4.4 58.7 38.1 40 40 46.6 57.9 69 57.9h58.9c16.8 0 25.3-8.4 20.4-25-11.2-34.9-86.9-106.7-90.3-111.5-8.7-11.2-6.2-16.2 0-26.2.1-.1 72-101.3 79.4-135.6z"></path></svg>
+                                        </div>
+                                        <a href="#" class="socials__link">vk.com/ivanovpavelnicknametest</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="reviews-arrows">
+                            <div class="reviews-arrows__prevmessage">
+                                <img src="./img/left-arrow.png" alt="">
+                            </div>
+                            <div class="reviews-arrows__nextmessage">
+                                <img src="./img/right-arrow.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section services shadow">
+            <div class="container">
+                <h2 class="title services__title">Какие услуги мы оказываем</h2>
+                <a href="#" class="services__block">
+                    <img src="./img/services-img1.jpg" alt="">
+                    <div class="services-box">
+                        <h3 class="services__block-title">Разработка сайтов от 45 000 руб.</h3>
+                        <ul class="services__list">
+                            <li>Одностраничные сайты (Landing Page)</li>
+                            <li>Многостраничные сайты</li>
+                            <li>Квизы</li>
+                            <li>Интернет-магазины</li>
+                            <li>Сайты на конструкторах (Tilda, PlatformaLP)</li>
+                        </ul>
+                    </div>
+                </a>
+                <a href="#" class="services__block services__block-second">
+                    <img src="./img/services-img2.jpg" alt="">
+                    <div class="services-box">
+                        <h3 class="services__block-title">Контекстная реклама от 15 000 руб.</h3>
+                        <ul class="services__list">
+                            <li>Настройка Яндекс.Директ</li>
+                            <li>Настройка Google Adwords</li>
+                            <li>Сопровождение и оптимизация рекламных кампаний</li>
+                        </ul>
+                    </div>
+                </a>
+                <h4 class="services__minititle">А также:</h4>
+                <div class="services-blocks flex">
+                    <div class="services-block">
+                        <span>Установка CRM-систем</span>
+                        <img src="./img/services/serv1.png" alt="serv1">
+                    </div>
+                    <div class="services-block">
+                        <span>SMM продвижение</span>
+                        <img src="./img/services/serv2.png" alt="serv2">
+                    </div>
+                    <div class="services-block">
+                        <span>Брендинг и фирменный стиль</span>
+                        <img src="./img/services/serv3.png" alt="serv3">
+                    </div>
+                    <div class="services-block">
+                        <span>Установка систем </span>
+                        <img src="./img/services/serv4.png" alt="serv4">
+                    </div>
+                    <div class="services-block">
+                        <span>Таргетированная реклама</span>
+                        <img src="./img/services/serv5.png" alt="serv5">
+                    </div>
+                    <div class="services-block">
+                        <span>SEO продвижение</span>
+                        <img src="./img/services/serv6.png" alt="serv6">
+                    </div>
+                </div>
+                <div class="services-logos services-logos-top flex">
+                    <div class="services-logo">
+                        <img src="./img/logos/amocrm.png" alt="amocrm">
+                    </div>
+                    <div class="services-logo">
+                        <img src="./img/logos/roistat.png" alt="roistat">
+                    </div>
+                    <div class="services-logo">
+                        <img src="./img/logos/tilda.png" alt="tilda">
+                    </div>
+                    <div class="services-logo">
+                        <img src="./img/logos/platforma.png" alt="platforma">
+                    </div>
+                    <div class="services-logo">
+                        <img src="./img/logos/elama.png" alt="elama">
+                    </div>
+                    <div class="services-logo">
+                        <img src="./img/logos/sendpulse.png" alt="sendpulse">
+                    </div>
+                </div>
+                <div class="services-logos services-logos-bottom flex">
+                    <div class="services-logo">
+                        <img src="./img/logos/lptracker.png" alt="lptracker">
+                    </div>
+                    <div class="services-logo">
+                        <img src="./img/logos/jivosite.png" alt="jivosite">
+                    </div>
+                    <div class="services-logo">
+                        <img src="./img/logos/wordpress.png" alt="wordpress">
+                    </div>
+                    <div class="services-logo">
+                        <img src="./img/logos/opencart.png" alt="opencart">
+                    </div>
+                    <div class="services-logo">
+                        <img src="./img/logos/metrika.png" alt="metrika">
+                    </div>
+                    <div class="services-logo">
+                        <img src="./img/logos/analytics.png" alt="analytics">
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
     <footer class="footer">
         <div class="container">
@@ -290,5 +704,6 @@
 
     <script src="https://code.jquery.com/jquery.min.js"></script>
     <script src="./js/script.js"></script>
+    <script src="./js/main.js"></script>
 </body>
 </html>

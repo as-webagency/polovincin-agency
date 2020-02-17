@@ -1,4 +1,50 @@
+@media (max-width: 1550px)
+    .animate
+        &-wrapper
+            max-width: 840px
+        &-browser
+            top: 40px
+            right: -250px
+        &-stack-manets
+            left: 64%
+@media (max-width: 1350px)
+    .works
+        &-block,
+        &-item
+            &__title
+                padding: 30px 0 0 30px
+        &-block,
+        &-item
+            &__performed,
+                padding: 0 0 20px 30px
+    .animate
+        &-wrapper
+            max-width: 740px
+        &-browser
+            right: -350px
+        &-stack-manets
+            left: 72%
+        &-top-side
+            right: 25%
 @media (max-width: 1305px)
+    .reviews
+        &-wrapper
+            max-width: 1000px
+            margin: 0 auto
+            &__image
+                max-width: 750px
+                height: 100%
+        &-video
+            top: 33%
+        &-arrows
+            &__next,
+            &__nextpaper,
+            &__nextmessage
+                right: 0
+            &__prev,
+            &__prevpaper,
+            &__prevmessage
+                left: 0
     .subscription
         &-right
             max-width: 500px
@@ -8,7 +54,32 @@
             &::before
                 left: 50%
                 transform: translateX(-50%)
+@media (max-width: 1200px)
+    .works
+        &-item
+            max-width: 50%
 @media (max-width: 1170px)
+    .services-logo
+        width: 160px
+        height: 160px
+    .services-logos-top,
+    .services-logos-bottom
+        justify-content: center
+    .animate
+        &-wrapper
+            max-width: 650px
+        &-left-side
+            top: 60px
+            left: -80px
+        &-right-side
+            left: -90px
+        &-browser
+            right: -350px
+        &-stack-manets
+            left: 75%
+        &-top-side
+            top: 14%
+            right: 30%
     .thanks
         &__left 
             img
@@ -27,7 +98,58 @@
                 &-card
                     &__link
                         max-width: 320px
+@media (max-width: 1160px)
+    .paper-slide__box
+        margin: 0 auto
+    .services
+        &-box
+            max-width: 850px
+            margin: 40px 0 0 50px
+        &__block
+            max-width: 950px
+            margin: 0 auto 40px
+@media (max-width: 1130px)
+    .services-blocks
+        max-width: 800px
+        margin: 0 auto
+@media (max-width: 1120px)
+    .message
+        &-slide
+            &__item
+                position: relative
+                height: 840px
+                margin: 0 auto
+                img
+                    position: absolute
+                    top: 0
+                    left: 50%
+                    transform: translateX(-50%)
+    .message-slide__wrap
+        top: auto
+        bottom: 0  
+        left: 50%                  
+        transform: translateX(-50%)
 @media (max-width: 1100px)
+    .reviews
+        &-video
+            top: 0
+            left: 50%
+            transform: translateX(-50%)
+        &-inner
+            display: none
+        &-wrapper__image
+            opacity: 0
+            width: 0
+            height: 360px
+    .hero
+        &__animate
+            display: none
+        &__content
+            max-width: 600px
+            margin: 0 auto
+    .block
+        &-advantages
+            margin-bottom: 25px
     .subscription 
         .container
             flex-direction: column
@@ -73,6 +195,12 @@
                 img
                     height: 300px
 @media (max-width: 1030px)
+    .reviews
+        &-top
+            flex-direction: column
+            align-items: center
+            &__title
+                margin: 0 0 25px
     .blog
         &-bottom 
             .blog
@@ -84,7 +212,43 @@
     .contacts
         &__indentation
             margin-right: 15px
-@media (max-width: 992px)  
+@media (max-width: 992px) 
+    .services-logos-top
+        margin: 40px auto 0 
+    .services-logos-top, 
+    .services-logos-bottom
+        max-width: 600px
+    .services-logos-bottom
+        margin: 0 auto 40px
+    .services
+        &__title
+            text-align: center
+        &__list li
+            display: block
+            margin-right: 0
+            margin-bottom: 10px
+        &-box
+            max-width: 750px
+        &__block
+            &-title
+                font-size: 18px
+            &:nth-child(2)
+                .services__list li
+                    &:nth-child(4),
+                    &:last-child
+                        display: none
+    .reviews
+        &-wrapper,
+        &-wrapper__image
+            max-width: 500px
+        &-video
+            width: 100%
+            overflow: hidden
+    .works
+        &-block,
+        &-item
+            &__title
+                font-size: 18px 
     .header
         .container
             padding: 0
@@ -184,7 +348,43 @@
         &-top, 
         &-bottom
             max-width: 490px                    
+@media (max-width: 890px)
+    .message-slide__item
+        height: 900px
+    .message-slide__wrap
+        width: 100%
+        max-width: 400px
 @media (max-width: 860px)
+    .services
+        &__block
+            max-width: 380px
+            &:nth-child(2)
+                .services__list li
+                    &:nth-child(4),
+                    &:last-child
+                        display: block
+    .services
+        &-box
+            margin: 20px 0 0 30px
+            margin: 0 auto
+            max-width: none
+            &::after
+                display: none
+        &__block
+            min-height: 200px
+            img
+                display: none
+            
+    .works
+        &-block,
+        &-item
+            &__performed
+                padding: 0 0 15px 15px
+                max-width: none
+        &-block,
+        &-item
+            &__title
+                padding: 15px 0 0 15px
     .blog
         &-top
             .blog
@@ -193,6 +393,22 @@
                         flex-direction: column
                         align-items: center                    
 @media (max-width: 768px)
+    .services-block
+        padding: 20px 14px
+    .services-blocks
+        flex-direction: column
+        align-items: center
+    .services__minititle
+        text-align: center
+    .works
+        &-block,
+        &-item
+            max-width: 100%
+    .works
+        &-block,
+        &-item
+            &__title
+                line-height: 26px
     .blog
         &__title,
         &__subtitle,
@@ -203,7 +419,44 @@
             &s
                 flex-direction: column
                 align-items: center
+@media (max-width: 620px)
+    .paper-slide__box
+        flex-direction: column
+        align-items: center
+        max-width: 360px
+    .paper-slide__box
+        img
+            margin: 0 auto 20px    
 @media (max-width: 585px)
+    .reviews
+        &-video
+            iframe
+                max-width: 380px
+                margin: 0 auto
+                display: block
+    .hero
+        &__title
+            text-align: center
+        &__content
+            p
+                text-align: center
+        &__commercial
+            span 
+                text-align: center
+                display: block
+                margin: 10px 0
+        &__button
+            margin-right: 0
+            margin-bottom: 25px
+            &s
+                flex-direction: column
+                align-items: center
+        &__advantages
+            flex-direction: column
+            align-items: center
+    .button
+        &__width
+            max-width: 293px
     .subscription
         &-right
             top: 220px
@@ -252,6 +505,19 @@
         &__socials
             margin-top: 20px        
 @media (max-width: 425px)
+    .reviews-arrows__nextmessage,
+    .reviews-arrows__prevmessage
+        top: 20%
+    .paper-slide__box
+        padding: 20px
+        max-width: 280px
+    .reviews
+        &-video
+            iframe
+                max-width: 300px
+                height: 320px
+                margin: 0 auto
+                display: block
     .socials 
         margin-bottom: 15px
     .header
@@ -305,6 +571,27 @@
         &-left
             &__title
                 margin: 0 0 320px                                     
+@media (max-width: 375px)
+    .services__block
+        max-width: 280px
+    .message-slide__item
+        height: 850px
+    .reviews
+        &-video
+            iframe
+                max-width: 250px
+                height: 270px
+        &-arrows__next,
+        &-arrows__prev
+            top: 40%
+    .works
+        &-block,
+        &-item
+            &__title
+                font-size: 14px
+                line-height: normal 
+            &__performed
+                padding: 0 0 10px 15px
 @media (max-width: 360px) 
     .subscription           
         &-left
