@@ -55,6 +55,17 @@
                 left: 50%
                 transform: translateX(-50%)
 @media (max-width: 1200px)
+    .modal-container,
+    .popup-container
+        max-width: 630px
+    .modal-task button
+        margin-bottom: 30px
+    .modal-content-right
+        margin: 0 auto    
+    .popup-content-left
+        margin: 0 auto
+    .popup-content-right
+        display: none
     .works
         &-item
             max-width: 50%
@@ -450,13 +461,42 @@
                 flex-direction: column
                 align-items: center
 @media (max-width: 620px)
+    .popup-container,
+    .modal-container
+        max-width: 380px
+    .popup, .modal
+        top: 20px
+    .popup-top, .modal-top
+        margin-bottom: 30px
+        display: flex
+        flex-direction: column-reverse
+        align-items: center
+    .popup-free,
+    .modal-free
+        display: block
+        margin-top: 15px
+    .popup-places,
+    .modal-places
+        margin: 0 auto
+    .popup-content-left__title,
+    .popup-content-left p
+        display: none
+    .popup-form-wrap,
+    .popup-grow:last-child
+        flex-direction: column
+        align-items: center
+    .popup-grow .policy__check
+        margin-top: 15px
     .paper-slide__box
         flex-direction: column
         align-items: center
         max-width: 360px
     .paper-slide__box
         img
-            margin: 0 auto 20px    
+            margin: 0 auto 20px 
+    .modal-content-left__title
+        font-size: 24px
+        line-height: normal   
 @media (max-width: 585px)
     .discuss-grow
         flex-direction: column
@@ -627,6 +667,8 @@
             &__title
                 margin: 0 0 320px                                     
 @media (max-width: 375px)
+    .modal-container
+        max-width: 320px
     .services__block
         max-width: 280px
     .message-slide__item

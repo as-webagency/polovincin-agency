@@ -1,0 +1,132 @@
+.mask
+    display: none
+    position: fixed
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    background: url('../img/mask.jpg') center repeat
+    z-index: 60
+.popup,
+.modal   
+    display: none
+    position: fixed
+    top: 50px
+    left: 50%
+    transform: translateX(-50%)
+    z-index: 70
+    &-container
+        width: 1200px   
+        padding: 0 15px
+    &-top
+        justify-content: space-between
+        margin-bottom: 100px
+    &-free
+        color: rgba($light, .2)
+        font-size: 12px
+        text-transform: uppercase
+    &-content
+        justify-content: space-between
+        &-left
+            max-width: 600px
+            &__title
+                margin: 0 0 25px
+            p
+                font-size: 18px
+                color: $light
+                margin: 0 0 25px
+        &-right
+            max-width: 550px
+    &-grow
+        margin-bottom: 30px
+        position: relative
+        .policy__check
+            max-width: 270px
+            margin-top: 0
+        &:last-child
+            justify-content: space-between
+            width: 100%
+            align-items: flex-end
+        &__label
+            display: block
+            margin-bottom: 15px
+        &__input
+            width: 270px
+            height: 70px
+        &__button
+            position: relative
+            width: 270px
+            height: 70px
+            font-size: 14px
+            video
+                width: 270px
+                height: 70px
+    &-form
+        &-wrap
+            justify-content: space-between
+    &-places
+        text-align: center
+        color: $light
+        max-width: 260px  
+.modal
+    max-height: 80%
+    overflow-y: scroll
+    &-content
+        justify-content: space-between
+        &-left
+            max-width: 430px
+            &__title
+                margin: 0 0 30px   
+    &-task
+        position: relative
+        h6
+            margin: 0
+            font-size: 12px
+            color: rgba($light, .5)
+            text-transform: uppercase 
+            font-weight: 300
+        p
+            margin: 15px 0 30px 
+            color: $light     
+        ol
+            padding: 0 0 0 15px
+            margin: 15px 0
+            li
+                font-size: 14px
+                color: $light
+                line-height: 24px   
+        a
+            position: relative
+            color: $blue
+            margin: 15px 0
+            display: block
+            &::before
+                content: url('../img/language.png') 
+                display: inline-block
+                vertical-align: middle
+                margin-right: 10px
+        button
+            width: 262px
+            height: 70px
+            video
+                width: 262px
+                height: 70px
+.close
+    &__button
+        background: url('../img/close.png') no-repeat
+        width: 83px
+        height: 14px
+        border: none
+.popup-grow
+    position: relative
+#us-phone-error,
+#userPhone-error
+    position: absolute
+    color: red
+    width: 100%
+    display: inline-block
+    bottom: 5px
+    left: 2px    
+    font-size: 14px 
+#userPhone-error
+    bottom: -26px    
