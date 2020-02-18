@@ -59,6 +59,12 @@
         &-item
             max-width: 50%
 @media (max-width: 1170px)
+    .team
+        .container
+            justify-content: space-between
+        &-right
+            img
+                max-width: 500px
     .services-logo
         width: 160px
         height: 160px
@@ -113,6 +119,11 @@
         max-width: 800px
         margin: 0 auto
 @media (max-width: 1120px)
+    .discounts,
+    .discuss-right
+        display: none
+    .discuss-left
+        margin: 0 auto
     .message
         &-slide
             &__item
@@ -130,6 +141,9 @@
         left: 50%                  
         transform: translateX(-50%)
 @media (max-width: 1100px)
+    .team-right 
+        img
+            max-width: 400px
     .reviews
         &-video
             top: 0
@@ -213,6 +227,13 @@
         &__indentation
             margin-right: 15px
 @media (max-width: 992px) 
+    .team 
+        padding: 0 0 50px
+        .container
+            flex-direction: column
+            align-items: center
+            &:nth-child(2)
+                flex-direction: row
     .services-logos-top
         margin: 40px auto 0 
     .services-logos-top, 
@@ -349,6 +370,15 @@
         &-bottom
             max-width: 490px                    
 @media (max-width: 890px)
+    .team
+        &-boxes
+            width: 50%
+            &:nth-child(2),
+            &:nth-child(3)
+                background-color: $darkBlue
+            &:nth-child(1),
+            &:nth-child(4)
+                background-color: $blue
     .message-slide__item
         height: 900px
     .message-slide__wrap
@@ -428,6 +458,17 @@
         img
             margin: 0 auto 20px    
 @media (max-width: 585px)
+    .discuss-grow
+        flex-direction: column
+        align-items: center
+        &-inner:last-child
+            flex-direction: column
+            align-items: center
+    .discuss-grow-inner .policy__check
+        margin-top: 10px    
+        padding-bottom: 40px
+    .team-list li
+        max-width: 220px
     .reviews
         &-video
             iframe
@@ -505,6 +546,20 @@
         &__socials
             margin-top: 20px        
 @media (max-width: 425px)
+    .team-text
+        font-size: 18px
+    .team-left__subtilte
+        font-size: 18px
+        line-height: normal
+    .team-in-city
+        display: flex
+    .team-right img
+        max-width: 100%
+    .team-list li
+        max-width: 100%
+    .team-right-block
+        right: auto
+        left: 0
     .reviews-arrows__nextmessage,
     .reviews-arrows__prevmessage
         top: 20%

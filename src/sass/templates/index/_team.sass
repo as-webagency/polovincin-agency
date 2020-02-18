@@ -1,0 +1,112 @@
+.team
+    padding: 20px 0 60px
+    &-left
+        max-width: 560px
+        &__title
+            margin: 0 0 35px
+        &__subtilte
+            display: block
+            font-size: 24px
+            line-height: 35px
+            margin: 0 0 30px
+            color: rgba($light, .5)
+    &-years
+        font-size: 24px
+        color: $light
+        margin: 0 0 35px
+    &-box
+        h3
+            font-size: 18px
+            margin: 0 0 20px
+            color: $light
+        p
+            font-size: 16px
+            line-height: 25px
+            color: $light
+    &-list
+        padding: 0
+        margin: 0 0 25px
+        list-style-type: none
+        justify-content: space-between
+        li
+            &:first-child,
+            &:nth-child(2)
+                border-top: 1px solid rgba($light, .5)
+            color: rgba($light, .5)
+            font-size: 16px
+            max-width: 260px
+            padding: 30px 0
+            line-height: 25px
+            border-bottom: 1px solid rgba($light, .5)
+            span
+                color: $light
+                font-weight: bold
+                display: inline-block
+    &-in-city
+        position: relative  
+        color: $light
+        font-size: 16px
+        margin-bottom: 60px
+        &::before
+            content: url('../img/geo.png')
+            display: inline-block
+            margin-right: 14px
+    &-right
+        position: relative
+        &-block
+            max-width: 250px
+            position: absolute
+            z-index: 10
+            bottom: 40px
+            right: 0
+        &-name
+            font-size: 18px
+            color: $darkText
+            background-color: $light
+            padding: 21px 32px
+            margin-bottom: 20px
+        &-position
+            font-size: 16px
+            color: rgba($light, .5)
+        &-call
+            font-size: 16px
+            color: $light
+            margin: 13px 0 20px
+            a
+                color: $blue
+    &-boxes
+        background-color: $blue
+        width: 25%
+        height: 170px
+        display: flex
+        align-items: center
+        justify-content: center
+        flex-direction: column
+        img
+            margin-bottom: 15px
+            display: block
+        &:nth-child(even)
+            background-color: $darkBlue
+        p
+            text-align: center
+            font-size: 16px
+            line-height: 25px
+            margin: 0 auto
+            color: $light
+            max-width: 200px
+    &-text
+        font-size: 24px
+        text-align: center
+        margin: 80px auto 30px
+        color: $light
+        line-height: 35px
+        max-width: 820px
+    &-down
+        position: relative
+        display: block
+        &::before
+            content: url('../img/arrows-down.png')
+            position: absolute
+            top: 0
+            left: 50%
+            transform: translateX(-50%)

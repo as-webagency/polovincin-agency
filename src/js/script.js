@@ -379,6 +379,11 @@ $('.paper-slide').slick({
     ]
 });
 
+$('.team-down').on('click', function() {
+    var scroll = Math.max($("body").scrollTop(),$("html").scrollTop()) + 150;
+    $("body,html").animate({"scrollTop":scroll}, 1000);
+});
+
 new WOW().init();
 // $(window).width(function () {
 //   $(window).width() < 800 && ($(".wow").removeClass("wow"), 

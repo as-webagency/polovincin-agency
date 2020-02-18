@@ -1,0 +1,68 @@
+.discuss
+    padding-top: 90px
+    position: relative
+    .container
+        position: relative
+    &-left
+        max-width: 570px
+        &__title
+            margin: 0 0 30px
+        &__subtitle
+            font-size: 18px
+            line-height: 32px
+            color: $light
+            margin: 0 0 40px
+    &-grow
+        justify-content: space-between
+        &-inner
+            .policy__check
+                max-width: 250px
+                margin-top: 0
+            &:last-child
+                align-items: flex-end
+                justify-content: space-between
+                width: 100%
+            &__label
+                display: block
+                margin-bottom: 20px
+            &__input,
+            &__select
+                height: 70px
+                margin-bottom: 30px
+            &__select
+                width: 271px
+                display: block
+    &__button
+        height: 70px
+        width: 271px
+        position: relative
+        display: inline-block
+        video
+            height: 70px
+            width: 271px
+    &-right
+        &-bg
+            background: url('../img/circ.png') no-repeat
+            max-width: 705px
+            width: 100%
+            min-height: 705px
+            position: absolute
+            top: 0
+            right: 0
+        &-up
+            img
+                position: relative
+                right: -90px
+                z-index: 5
+                display: block
+.discounts
+    position: absolute
+    top: 50%
+    right: 30px
+    width: 210px
+    transform: translateY(-50%)
+    z-index: 20
+    &-img
+        background: url('../img/new-discount.png') no-repeat
+        min-height: 262px
+        display: block
