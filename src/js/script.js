@@ -326,15 +326,6 @@ const animateForSite = function () {
   reqVariant(modalAniFirst)
 }
 
-// const blogButton = document.querySelector('.blog-more');
-
-// blogButton.addEventListener('click', (event) => {
-//     event.target.parentNode.querySelectorAll('.hidden').forEach(elem => {
-//         elem.classList.remove('hidden');
-//     });
-//     blogButton.style.display = 'none';
-// });
-
 $(".fancybox").fancybox();
 
 $(".burger").click(function(){
@@ -481,4 +472,13 @@ $('.popup-form').validate({
     messages: {
         user_phone: "Телефон обязателен"
     }
+});
+
+const blogButton = document.querySelector('.blog-more');
+
+blogButton.addEventListener('click', (event) => {
+    event.target.parentNode.querySelectorAll('.hidden').forEach(elem => {
+        elem.classList.remove('hidden');
+    });
+    blogButton.style.display = 'none';
 });
